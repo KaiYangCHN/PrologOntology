@@ -1,0 +1,1183 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY unibo "http://www.semanticweb.org/young/ontologies/2014/6/unibo#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/young/ontologies/2014/6/unibo#"
+     xml:base="http://www.semanticweb.org/young/ontologies/2014/6/unibo"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:unibo="http://www.semanticweb.org/young/ontologies/2014/6/unibo#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/young/ontologies/2014/6/unibo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#hasCourse -->
+
+    <owl:ObjectProperty rdf:about="&unibo;hasCourse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#hasPart -->
+
+    <owl:ObjectProperty rdf:about="&unibo;hasPart">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#hasType -->
+
+    <owl:ObjectProperty rdf:about="&unibo;hasType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="&unibo;isPartOf">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <owl:inverseOf rdf:resource="&unibo;hasPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Algoritmi_Avanzati -->
+
+    <owl:Class rdf:about="&unibo;Algoritmi_Avanzati">
+        <rdfs:subClassOf rdf:resource="&unibo;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Business_Administration -->
+
+    <owl:Class rdf:about="&unibo;Business_Administration">
+        <rdfs:subClassOf rdf:resource="&unibo;Profession"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Calcolo_Numerico_e_Software_Didattico -->
+
+    <owl:Class rdf:about="&unibo;Calcolo_Numerico_e_Software_Didattico">
+        <rdfs:subClassOf rdf:resource="&unibo;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Campus -->
+
+    <owl:Class rdf:about="&unibo;Campus">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Campus_of_Bologna -->
+
+    <owl:Class rdf:about="&unibo;Campus_of_Bologna">
+        <rdfs:subClassOf rdf:resource="&unibo;Campus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Campus_of_Cesena -->
+
+    <owl:Class rdf:about="&unibo;Campus_of_Cesena">
+        <rdfs:subClassOf rdf:resource="&unibo;Campus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Campus_of_Forlì -->
+
+    <owl:Class rdf:about="&unibo;Campus_of_Forlì">
+        <rdfs:subClassOf rdf:resource="&unibo;Campus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Campus_of_Ravenna -->
+
+    <owl:Class rdf:about="&unibo;Campus_of_Ravenna">
+        <rdfs:subClassOf rdf:resource="&unibo;Campus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Campus_of_Rimini -->
+
+    <owl:Class rdf:about="&unibo;Campus_of_Rimini"/>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Computer_Engineering -->
+
+    <owl:Class rdf:about="&unibo;Computer_Engineering">
+        <rdfs:subClassOf rdf:resource="&unibo;Profession"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Computer_Science -->
+
+    <owl:Class rdf:about="&unibo;Computer_Science">
+        <rdfs:subClassOf rdf:resource="&unibo;Profession"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Computer_Science_and_Engineering -->
+
+    <owl:Class rdf:about="&unibo;Computer_Science_and_Engineering">
+        <rdfs:subClassOf rdf:resource="&unibo;Profession"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Computer_Science_for_Management -->
+
+    <owl:Class rdf:about="&unibo;Computer_Science_for_Management">
+        <rdfs:subClassOf rdf:resource="&unibo;Profession"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Course -->
+
+    <owl:Class rdf:about="&unibo;Course">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department -->
+
+    <owl:Class rdf:about="&unibo;Department">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Agricultural_Sciences -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Agricultural_Sciences">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Agricultural_and_Food_Sciences -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Agricultural_and_Food_Sciences">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Architecture -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Architecture">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Biological_Geological_and_Environmental_Sciences -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Biological_Geological_and_Environmental_Sciences">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Biomedical_and_Neuromotor_Sciences -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Biomedical_and_Neuromotor_Sciences">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Chemistry -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Chemistry">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Civil_Chemical_Environmental_and_Materials_Engineering -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Civil_Chemical_Environmental_and_Materials_Engineering">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Classical_Philology_and_Italian_Studies -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Classical_Philology_and_Italian_Studies">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Computer_Science_and_Engineering -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Computer_Science_and_Engineering">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Cultural_Heritage -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Cultural_Heritage">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Economics -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Economics">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Education_Studies -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Education_Studies">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Electrical_Electronic_and_Information_Engineering -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Electrical_Electronic_and_Information_Engineering">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Experimental_Diagnostic_and_Specialty_Medicine -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Experimental_Diagnostic_and_Specialty_Medicine">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_History_and_Cultures -->
+
+    <owl:Class rdf:about="&unibo;Department_of_History_and_Cultures">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Industrial_Chemistry -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Industrial_Chemistry">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Industrial_Engineering -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Industrial_Engineering">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Interpreting_and_Translation -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Interpreting_and_Translation">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Legal_Studies -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Legal_Studies">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Life_Quality_Studies -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Life_Quality_Studies">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Management -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Management">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Mathematics -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Mathematics">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Medical_and_Surgical_Sciences -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Medical_and_Surgical_Sciences">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Modern_Languages_Literatures_and_Cultures -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Modern_Languages_Literatures_and_Cultures">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Pharmacy_and_Biotechnology -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Pharmacy_and_Biotechnology">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Philosophy_and_Communication_Studies -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Philosophy_and_Communication_Studies">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Physics_and_Astronomy -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Physics_and_Astronomy">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Political_and_Social_Sciences -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Political_and_Social_Sciences">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Psychology -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Psychology">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Sociology_and_Business_Law -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Sociology_and_Business_Law">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Statistical_Sciences -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Statistical_Sciences">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_The_Arts -->
+
+    <owl:Class rdf:about="&unibo;Department_of_The_Arts">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_Veterinary_Medical_Sciences -->
+
+    <owl:Class rdf:about="&unibo;Department_of_Veterinary_Medical_Sciences">
+        <rdfs:subClassOf rdf:resource="&unibo;Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Diritto_Amministrativo -->
+
+    <owl:Class rdf:about="&unibo;Diritto_Amministrativo">
+        <rdfs:subClassOf rdf:resource="&unibo;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Economics_and_Accounting -->
+
+    <owl:Class rdf:about="&unibo;Economics_and_Accounting">
+        <rdfs:subClassOf rdf:resource="&unibo;Profession"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Ingegneria_dei_Sistemi_Software -->
+
+    <owl:Class rdf:about="&unibo;Ingegneria_dei_Sistemi_Software">
+        <rdfs:subClassOf rdf:resource="&unibo;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#L -->
+
+    <owl:Class rdf:about="&unibo;L">
+        <rdfs:subClassOf rdf:resource="&unibo;ProgrammeType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#LM -->
+
+    <owl:Class rdf:about="&unibo;LM">
+        <rdfs:subClassOf rdf:resource="&unibo;ProgrammeType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Mathematics -->
+
+    <owl:Class rdf:about="&unibo;Mathematics">
+        <rdfs:subClassOf rdf:resource="&unibo;Profession"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Modelli_Econometrici_per_il_Decisioni_Aziendali -->
+
+    <owl:Class rdf:about="&unibo;Modelli_Econometrici_per_il_Decisioni_Aziendali">
+        <rdfs:subClassOf rdf:resource="&unibo;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Profession -->
+
+    <owl:Class rdf:about="&unibo;Profession">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#ProgrammeType -->
+
+    <owl:Class rdf:about="&unibo;ProgrammeType">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Reti_di_Calcolatori -->
+
+    <owl:Class rdf:about="&unibo;Reti_di_Calcolatori">
+        <rdfs:subClassOf rdf:resource="&unibo;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School -->
+
+    <owl:Class rdf:about="&unibo;School">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_Agriculture_and_Veterinary_Medicine -->
+
+    <owl:Class rdf:about="&unibo;School_of_Agriculture_and_Veterinary_Medicine">
+        <rdfs:subClassOf rdf:resource="&unibo;School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_Arts_Humanities_and_Cultural_Heritage -->
+
+    <owl:Class rdf:about="&unibo;School_of_Arts_Humanities_and_Cultural_Heritage">
+        <rdfs:subClassOf rdf:resource="&unibo;School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_Economics_Management_and_Statistics -->
+
+    <owl:Class rdf:about="&unibo;School_of_Economics_Management_and_Statistics">
+        <rdfs:subClassOf rdf:resource="&unibo;School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_Engineering_and_Architecture -->
+
+    <owl:Class rdf:about="&unibo;School_of_Engineering_and_Architecture">
+        <rdfs:subClassOf rdf:resource="&unibo;School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_Foreign_Languages_and_Literatures_Interpreting_and_Translation -->
+
+    <owl:Class rdf:about="&unibo;School_of_Foreign_Languages_and_Literatures_Interpreting_and_Translation">
+        <rdfs:subClassOf rdf:resource="&unibo;School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_Law -->
+
+    <owl:Class rdf:about="&unibo;School_of_Law">
+        <rdfs:subClassOf rdf:resource="&unibo;School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_Medicine -->
+
+    <owl:Class rdf:about="&unibo;School_of_Medicine">
+        <rdfs:subClassOf rdf:resource="&unibo;School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_Pharmacy_Biotechnology_and_Sport_Science -->
+
+    <owl:Class rdf:about="&unibo;School_of_Pharmacy_Biotechnology_and_Sport_Science">
+        <rdfs:subClassOf rdf:resource="&unibo;School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_Political_Sciences -->
+
+    <owl:Class rdf:about="&unibo;School_of_Political_Sciences">
+        <rdfs:subClassOf rdf:resource="&unibo;School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_Psychology_and_Education -->
+
+    <owl:Class rdf:about="&unibo;School_of_Psychology_and_Education">
+        <rdfs:subClassOf rdf:resource="&unibo;School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_Science -->
+
+    <owl:Class rdf:about="&unibo;School_of_Science">
+        <rdfs:subClassOf rdf:resource="&unibo;School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Simulazione_di_Sistemi -->
+
+    <owl:Class rdf:about="&unibo;Simulazione_di_Sistemi">
+        <rdfs:subClassOf rdf:resource="&unibo;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Sistemi_Digitali -->
+
+    <owl:Class rdf:about="&unibo;Sistemi_Digitali">
+        <rdfs:subClassOf rdf:resource="&unibo;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Sistemi_Middleware -->
+
+    <owl:Class rdf:about="&unibo;Sistemi_Middleware">
+        <rdfs:subClassOf rdf:resource="&unibo;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Storia_della_Matematica -->
+
+    <owl:Class rdf:about="&unibo;Storia_della_Matematica">
+        <rdfs:subClassOf rdf:resource="&unibo;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Student -->
+
+    <owl:Class rdf:about="&unibo;Student">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Tassazione_Internazionale -->
+
+    <owl:Class rdf:about="&unibo;Tassazione_Internazionale">
+        <rdfs:subClassOf rdf:resource="&unibo;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Teacher -->
+
+    <owl:Class rdf:about="&unibo;Teacher">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Campus_of_bologna_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Campus_of_bologna_2014">
+        <rdf:type rdf:resource="&unibo;Campus_of_Bologna"/>
+        <hasPart rdf:resource="&unibo;School_of_economics_management_and_statistics_2014"/>
+        <hasPart rdf:resource="&unibo;School_of_science_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Campus_of_cesena_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Campus_of_cesena_2014">
+        <rdf:type rdf:resource="&unibo;Campus_of_Cesena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Campus_of_forlì_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Campus_of_forlì_2014">
+        <rdf:type rdf:resource="&unibo;Campus_of_Forlì"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Campus_of_ravenna_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Campus_of_ravenna_2014">
+        <rdf:type rdf:resource="&unibo;Campus_of_Ravenna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Campus_of_rimini_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Campus_of_rimini_2014">
+        <rdf:type rdf:resource="&unibo;Campus_of_Rimini"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_biological_geological_and_environmental_sciences_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Department_of_biological_geological_and_environmental_sciences_2014">
+        <rdf:type rdf:resource="&unibo;Department_of_Biological_Geological_and_Environmental_Sciences"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_biomedical_and_neuromotor_sciences_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Department_of_biomedical_and_neuromotor_sciences_2014">
+        <rdf:type rdf:resource="&unibo;Department_of_Biomedical_and_Neuromotor_Sciences"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_chemistry_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Department_of_chemistry_2014">
+        <rdf:type rdf:resource="&unibo;Department_of_Chemistry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_computer_science_and_engineering_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Department_of_computer_science_and_engineering_2014">
+        <rdf:type rdf:resource="&unibo;Department_of_Computer_Science_and_Engineering"/>
+        <hasPart rdf:resource="&unibo;computer_engineering_2014"/>
+        <hasType rdf:resource="&unibo;computer_engineering_2014"/>
+        <hasPart rdf:resource="&unibo;computer_science_2014"/>
+        <hasType rdf:resource="&unibo;computer_science_2014"/>
+        <hasType rdf:resource="&unibo;computer_science_and_engineering_2014"/>
+        <hasPart rdf:resource="&unibo;computer_science_and_engineering_2014"/>
+        <hasType rdf:resource="&unibo;computer_science_for_management_2014"/>
+        <hasPart rdf:resource="&unibo;computer_science_for_management_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_economics_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Department_of_economics_2014">
+        <rdf:type rdf:resource="&unibo;Department_of_Economics"/>
+        <hasPart rdf:resource="&unibo;business_administration_2014"/>
+        <hasPart rdf:resource="&unibo;economics_and_accounting_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_industrial_chemistry_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Department_of_industrial_chemistry_2014">
+        <rdf:type rdf:resource="&unibo;Department_of_Industrial_Chemistry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_management_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Department_of_management_2014">
+        <rdf:type rdf:resource="&unibo;Department_of_Management"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_mathematics_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Department_of_mathematics_2014">
+        <rdf:type rdf:resource="&unibo;Department_of_Mathematics"/>
+        <hasPart rdf:resource="&unibo;mathematics_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_medical_and_surgical_sciences_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Department_of_medical_and_surgical_sciences_2014">
+        <rdf:type rdf:resource="&unibo;Department_of_Medical_and_Surgical_Sciences"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_pharmacy_and_biotechnology_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Department_of_pharmacy_and_biotechnology_2014">
+        <rdf:type rdf:resource="&unibo;Department_of_Pharmacy_and_Biotechnology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_physics_and_astronomy_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Department_of_physics_and_astronomy_2014">
+        <rdf:type rdf:resource="&unibo;Department_of_Physics_and_Astronomy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_statistical_sciences_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Department_of_statistical_sciences_2014">
+        <rdf:type rdf:resource="&unibo;Department_of_Statistical_Sciences"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Department_of_veterinary_medical_sciences_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Department_of_veterinary_medical_sciences_2014">
+        <rdf:type rdf:resource="&unibo;Department_of_Veterinary_Medical_Sciences"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#Laurea -->
+
+    <owl:NamedIndividual rdf:about="&unibo;Laurea">
+        <rdf:type rdf:resource="&unibo;L"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#LaureaMagistrale -->
+
+    <owl:NamedIndividual rdf:about="&unibo;LaureaMagistrale">
+        <rdf:type rdf:resource="&unibo;LM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_economics_management_and_statistics_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;School_of_economics_management_and_statistics_2014">
+        <rdf:type rdf:resource="&unibo;School_of_Economics_Management_and_Statistics"/>
+        <hasPart rdf:resource="&unibo;Department_of_economics_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_law_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;School_of_law_2014">
+        <rdf:type rdf:resource="&unibo;School_of_Law"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_medicine_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;School_of_medicine_2014">
+        <rdf:type rdf:resource="&unibo;School_of_Medicine"/>
+        <hasPart rdf:resource="&unibo;Department_of_biomedical_and_neuromotor_sciences_2014"/>
+        <hasPart rdf:resource="&unibo;Department_of_medical_and_surgical_sciences_2014"/>
+        <hasPart rdf:resource="&unibo;Department_of_veterinary_medical_sciences_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#School_of_science_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;School_of_science_2014">
+        <rdf:type rdf:resource="&unibo;School_of_Science"/>
+        <hasPart rdf:resource="&unibo;Department_of_chemistry_2014"/>
+        <hasPart rdf:resource="&unibo;Department_of_computer_science_and_engineering_2014"/>
+        <hasPart rdf:resource="&unibo;Department_of_industrial_chemistry_2014"/>
+        <hasPart rdf:resource="&unibo;Department_of_mathematics_2014"/>
+        <hasPart rdf:resource="&unibo;Department_of_pharmacy_and_biotechnology_2014"/>
+        <hasPart rdf:resource="&unibo;Department_of_physics_and_astronomy_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#algoritmi_avanzati_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;algoritmi_avanzati_2014">
+        <rdf:type rdf:resource="&unibo;Algoritmi_Avanzati"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#business_administration_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;business_administration_2014">
+        <rdf:type rdf:resource="&unibo;Business_Administration"/>
+        <hasType rdf:resource="&unibo;LaureaMagistrale"/>
+        <hasCourse rdf:resource="&unibo;business_administration_2014"/>
+        <hasCourse rdf:resource="&unibo;diritto_amministrativo_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#calcolo_numerico_e_software_didattico_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;calcolo_numerico_e_software_didattico_2014">
+        <rdf:type rdf:resource="&unibo;Calcolo_Numerico_e_Software_Didattico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#computer_engineering_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;computer_engineering_2014">
+        <rdf:type rdf:resource="&unibo;Computer_Engineering"/>
+        <hasType rdf:resource="&unibo;Laurea"/>
+        <hasType rdf:resource="&unibo;LaureaMagistrale"/>
+        <hasCourse rdf:resource="&unibo;ingegneria_dei_sistemi_software_2014"/>
+        <hasCourse rdf:resource="&unibo;reti_di_calcolatori_2014"/>
+        <hasCourse rdf:resource="&unibo;sistemi_digitali_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#computer_science_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;computer_science_2014">
+        <rdf:type rdf:resource="&unibo;Computer_Science"/>
+        <hasType rdf:resource="&unibo;Laurea"/>
+        <hasType rdf:resource="&unibo;LaureaMagistrale"/>
+        <hasCourse rdf:resource="&unibo;algoritmi_avanzati_2014"/>
+        <hasCourse rdf:resource="&unibo;simulazione_di_sistemi_2014"/>
+        <hasCourse rdf:resource="&unibo;sistemi_middleware_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#computer_science_and_engineering_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;computer_science_and_engineering_2014">
+        <rdf:type rdf:resource="&unibo;Computer_Science_and_Engineering"/>
+        <hasType rdf:resource="&unibo;Laurea"/>
+        <hasType rdf:resource="&unibo;LaureaMagistrale"/>
+        <hasCourse rdf:resource="&unibo;reti_di_calcolatori_2014"/>
+        <hasCourse rdf:resource="&unibo;sistemi_digitali_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#computer_science_for_management_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;computer_science_for_management_2014">
+        <rdf:type rdf:resource="&unibo;Computer_Science_for_Management"/>
+        <hasType rdf:resource="&unibo;Laurea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#diritto_amministrativo_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;diritto_amministrativo_2014">
+        <rdf:type rdf:resource="&unibo;Diritto_Amministrativo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#economics_and_accounting_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;economics_and_accounting_2014">
+        <rdf:type rdf:resource="&unibo;Economics_and_Accounting"/>
+        <hasType rdf:resource="&unibo;LaureaMagistrale"/>
+        <hasCourse rdf:resource="&unibo;tassazione_internazionale_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#ingegneria_dei_sistemi_software_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;ingegneria_dei_sistemi_software_2014">
+        <rdf:type rdf:resource="&unibo;Ingegneria_dei_Sistemi_Software"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#mathematics_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;mathematics_2014">
+        <rdf:type rdf:resource="&unibo;Mathematics"/>
+        <hasType rdf:resource="&unibo;Laurea"/>
+        <hasType rdf:resource="&unibo;LaureaMagistrale"/>
+        <hasCourse rdf:resource="&unibo;calcolo_numerico_e_software_didattico_2014"/>
+        <hasCourse rdf:resource="&unibo;storia_della_matematica_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#modelli_econometrici_per_il_decisioni_aziendali_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;modelli_econometrici_per_il_decisioni_aziendali_2014">
+        <rdf:type rdf:resource="&unibo;Modelli_Econometrici_per_il_Decisioni_Aziendali"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#reti_di_calcolatori_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;reti_di_calcolatori_2014">
+        <rdf:type rdf:resource="&unibo;Reti_di_Calcolatori"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#simulazione_di_sistemi_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;simulazione_di_sistemi_2014">
+        <rdf:type rdf:resource="&unibo;Simulazione_di_Sistemi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#sistemi_digitali_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;sistemi_digitali_2014">
+        <rdf:type rdf:resource="&unibo;Sistemi_Digitali"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#sistemi_middleware_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;sistemi_middleware_2014">
+        <rdf:type rdf:resource="&unibo;Sistemi_Middleware"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#storia_della_matematica_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;storia_della_matematica_2014">
+        <rdf:type rdf:resource="&unibo;Storia_della_Matematica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/young/ontologies/2014/6/unibo#tassazione_internazionale_2014 -->
+
+    <owl:NamedIndividual rdf:about="&unibo;tassazione_internazionale_2014">
+        <rdf:type rdf:resource="&unibo;Tassazione_Internazionale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&unibo;School_of_Agriculture_and_Veterinary_Medicine"/>
+            <rdf:Description rdf:about="&unibo;School_of_Arts_Humanities_and_Cultural_Heritage"/>
+            <rdf:Description rdf:about="&unibo;School_of_Economics_Management_and_Statistics"/>
+            <rdf:Description rdf:about="&unibo;School_of_Engineering_and_Architecture"/>
+            <rdf:Description rdf:about="&unibo;School_of_Foreign_Languages_and_Literatures_Interpreting_and_Translation"/>
+            <rdf:Description rdf:about="&unibo;School_of_Law"/>
+            <rdf:Description rdf:about="&unibo;School_of_Medicine"/>
+            <rdf:Description rdf:about="&unibo;School_of_Pharmacy_Biotechnology_and_Sport_Science"/>
+            <rdf:Description rdf:about="&unibo;School_of_Political_Sciences"/>
+            <rdf:Description rdf:about="&unibo;School_of_Psychology_and_Education"/>
+            <rdf:Description rdf:about="&unibo;School_of_Science"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&unibo;Campus_of_Bologna"/>
+            <rdf:Description rdf:about="&unibo;Campus_of_Cesena"/>
+            <rdf:Description rdf:about="&unibo;Campus_of_Forlì"/>
+            <rdf:Description rdf:about="&unibo;Campus_of_Ravenna"/>
+            <rdf:Description rdf:about="&unibo;Campus_of_Rimini"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&unibo;Department_of_Agricultural_Sciences"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Agricultural_and_Food_Sciences"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Architecture"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Biological_Geological_and_Environmental_Sciences"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Biomedical_and_Neuromotor_Sciences"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Chemistry"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Civil_Chemical_Environmental_and_Materials_Engineering"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Classical_Philology_and_Italian_Studies"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Computer_Science_and_Engineering"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Cultural_Heritage"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Economics"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Education_Studies"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Electrical_Electronic_and_Information_Engineering"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Experimental_Diagnostic_and_Specialty_Medicine"/>
+            <rdf:Description rdf:about="&unibo;Department_of_History_and_Cultures"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Industrial_Chemistry"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Industrial_Engineering"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Interpreting_and_Translation"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Legal_Studies"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Life_Quality_Studies"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Management"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Mathematics"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Medical_and_Surgical_Sciences"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Modern_Languages_Literatures_and_Cultures"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Pharmacy_and_Biotechnology"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Philosophy_and_Communication_Studies"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Physics_and_Astronomy"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Political_and_Social_Sciences"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Psychology"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Sociology_and_Business_Law"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Statistical_Sciences"/>
+            <rdf:Description rdf:about="&unibo;Department_of_The_Arts"/>
+            <rdf:Description rdf:about="&unibo;Department_of_Veterinary_Medical_Sciences"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&unibo;Computer_Engineering"/>
+            <rdf:Description rdf:about="&unibo;Computer_Science"/>
+            <rdf:Description rdf:about="&unibo;Computer_Science_and_Engineering"/>
+            <rdf:Description rdf:about="&unibo;Computer_Science_for_Management"/>
+            <rdf:Description rdf:about="&unibo;Mathematics"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&unibo;Campus"/>
+            <rdf:Description rdf:about="&unibo;Course"/>
+            <rdf:Description rdf:about="&unibo;Department"/>
+            <rdf:Description rdf:about="&unibo;Profession"/>
+            <rdf:Description rdf:about="&unibo;ProgrammeType"/>
+            <rdf:Description rdf:about="&unibo;School"/>
+            <rdf:Description rdf:about="&unibo;Student"/>
+            <rdf:Description rdf:about="&unibo;Teacher"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
